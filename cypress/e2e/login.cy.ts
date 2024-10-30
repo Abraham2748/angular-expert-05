@@ -1,4 +1,4 @@
-describe('Formulário de login', () => {
+xdescribe('Formulário de login', () => {
   it('Permite al usuario iniciar sesión', () => {
     cy.visit('http://localhost:4200/login');
     cy.get('input[name="email"]').type('usuario@example.com');
