@@ -1,0 +1,89 @@
+.overdue {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  border-left: 4px solid firebrick;
+}
+
+:host {
+  display: block;
+  font-family: "Roboto";
+  color: #333;
+  max-width: 600px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.todo-input:focus {
+  border-color: dodgerblue;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.todo-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 300ms;
+}
+.todo-button:hover {
+  background-color: deepskyblue;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 300ms;
+}
+.task-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+  font-weight: 500;
+}
+
+.task-status {
+  font-style: italic;
+  color: #333;
+}
