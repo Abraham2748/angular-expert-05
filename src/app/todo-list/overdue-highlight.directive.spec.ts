@@ -13,7 +13,7 @@ class TestHostComponent {
   task!: Task;
 }
 
-fdescribe('OverdueHighlightDirective', () => {
+describe('OverdueHighlightDirective', () => {
   let fixture: ComponentFixture<TestHostComponent>;
   let hostComponent: TestHostComponent;
   let divElement: HTMLElement;
